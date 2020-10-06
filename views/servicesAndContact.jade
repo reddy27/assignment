@@ -1,0 +1,15 @@
+#contact
+   container
+    section.jumbotron
+         #contact-form
+             form(name="add-estimation", method="post")
+                label(for="inputName" placeholder="Please enter name") Full Name
+                    input#inputName.form-control(type="text")
+                div.input
+                    label(for="inputEmail" placeholder="Please enter email") Email
+                    input#inputEmail.form-control(type="email")
+
+                    label(for="inputTextArea" placeholder="Please enter name") Description
+                    textarea#inputTextArea.form-control(rows="5")
+                div.actions
+                    input.btn.btn-primary(type="submit", value="Send")

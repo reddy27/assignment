@@ -1,0 +1,103 @@
+//- doctype html
+//- html
+//-   head
+//-     title= title
+//-     link(rel='stylesheet', href='/stylesheets/style.css')
+//-   body
+//-       h1 Jade - node template engine
+//-        #container
+//-         juice are amazing
+//-     block content
+
+
+doctype
+html( lang="en" )
+    head
+        title My own portfolio
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Baking Bootstrap Snippets with Jade' )
+        //- Bootswatch Theme
+        link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
+
+    body(style="padding-bottom:10rem;")
+
+            nav.navbar.navbar-default( role="navigation" )
+                        .navbar-header
+                            button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-inverse", aria-expanded="false", aria-controls="navbar")
+                                span.sr-only Toggle navigation
+                                span.icon-bar
+                                span.icon-bar
+                                span.icon-bar
+                            a.navbar-brand(href="#") create logo
+
+                        #navbar-inverse.collapse.navbar-collapse
+                            ul.nav.navbar-nav
+                                li.active: a( href="#home") Home
+                                li: a( href="#about" ) About
+                                li: a( href="#projects" ) Projects
+                                li: a( href="#sevices" ) Services
+                                li: a( href="#contact" ) Contact
+             #content(style="margin: -21px auto;")
+
+                #home
+                    .block.card.bg-dark.text-white
+                        img.card-img.img-fluid(src="https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1800&q=130", alt="my mission")
+                        .card-img-overlay
+
+                #about
+                    .jumbotron
+                        h1.display-4 Hey write about me heading
+                        p.lead  This is a simple text
+                        h4.my-4
+                        p.about-me-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                                                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                                                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                                                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                                                  desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                                                                  with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                                                                  recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                #projects
+                   section.jumbotron.text-center
+                      container
+                        h1 My Personal Projects
+                        p.lead.text-muted Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely
+                        p
+                         a.btn.btn-primary.my-2(href="#") Home
+                         a.btn.btn-secondary.my-2(href="#") Secondary call
+                      hr.my-4
+                      img.img-thumbnail.img-fluid(src="https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=500", alt="project 1")
+
+                      img.img-thumbnail.img-fluid(src="https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=500", alt="project 2")
+
+                      img.img-thumbnail.img-fluid(src="https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=500", alt="project 3")
+                #sevices
+                    section.jumbotron.text-center
+                      container
+                        h1 Services
+                        p.lead.text-muted Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely
+
+                #contact
+                    section.jumbotron
+                      container
+                        h1 Contact
+                        p.lead.text-muted Let's make something great!
+                        p I'm seeking out opportunities to collaborate with companies / agencies / individuals, not just work for them. I want to bring my collective design experience to the table where we can work together to solve real business-problems in a way that optimizes all of our respective experience and knowledge.
+                        p I want to avoid subjective pissing-matches, and favor open-minded collaborators where egos are out of the equation.
+                                                  If that all sounds about right, then lets for sure chat about how we can work together.
+                        p free to reach out through any platforms below:
+                        include ./servicesAndContact.jade
+
+
+
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
